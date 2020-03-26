@@ -71,6 +71,18 @@
   keywords = {波动率;;Realized GARCH;;风险分析;;VaR},
 }
 
+@Article{周少甫2019,
+  author   = {周少甫 and 王文畅},
+  title    = {得分驱动的已实现Wishart-GARCH模型及应用},
+  journal  = {统计与决策},
+  year     = {2019},
+  volume   = {35},
+  number   = {11},
+  pages    = {71--75},
+  abstract = {文章以银行业为例,基于股票逐笔交易数据,在得分驱动的已实现Wishart-GARCH模型的框架下,对银行业规模靠前的多只个股对数收益率的已实现协方差矩阵尝试多种降噪方法来进行建模以及预测,并检验预测效果。结果显示:该模型对于银行业个股间收益率的已实现协方差矩阵有着优于以往模型的良好预测效果。},
+  keywords = {已实现协方差;;Wishart分布;;GARCH模型;;高频数据},
+}
+
 @Article{宫晓莉2019,
   author   = {宫晓莉 and 熊熊},
   title    = {基于修正的已实现阈值幂变差的股市跳跃波动行为研究},
@@ -925,6 +937,659 @@
   volume   = {29},
   number   = {5},
   abstract = {SUMMARY(#br)We introduce a multivariate generalized autoregressive conditional heteroskedasticity (GARCH) model that incorporates realized measures of variances and covariances. Realized measures extract information about the current levels of volatilities and correlations from high‐frequency data, which is particularly useful for modeling financial returns during periods of rapid changes in the underlying covariance structure. When applied to market returns in conjunction with returns on an individual asset, the model yields a dynamic model specification of the conditional regression coefficient that is known as the beta . We apply the model to a large set of assets and find the conditional betas to be far more variable than usually found with rolling‐window regressions based exclusively on daily returns. In the empirical part of the paper, we examine the cross‐sectional as well as the time variation of the conditional beta series during the financial crises. Copyright © 2014 John Wiley & Sons, Ltd.},
+}
+
+@Article{2014,
+  title    = {REALIZED BETA GARCH},
+  journal  = {Journal of Applied Econometrics},
+  year     = {2014},
+  volume   = {29},
+  number   = {5},
+  abstract = {We introduce a multivariate generalized autoregressive conditional heteroskedasticity (GARCH) model that incorporates realized measures of variances and covariances. Realized measures extract information about the current levels of volatilities and correlations from high-frequency data, which is particularly useful for modeling financial returns during periods of rapid changes in the underlying covariance structure. When applied to market returns in conjunction with returns on an individual asset, the model yields a dynamic model specification of the conditional regression coefficient that is known as the beta. We apply the model to a large set of assets and find the conditional betas to be far more variable than usually found with rolling-window regressions based exclusively on daily returns. In the empirical part of the paper, we examine the cross-sectional as well as the time variation of the conditional beta series during the financial crises.},
+}
+
+@Article{马丹2014,
+  author   = {马丹},
+  title    = {中国证券市场不同频率波动预测模型比较研究——基于预测精度和风险管理的视角},
+  journal  = {数理统计与管理},
+  year     = {2014},
+  volume   = {33},
+  number   = {03},
+  pages    = {545--558},
+  abstract = {准确估计和预测金融资产价格波动是金融风险管理的核心问题。本文将厚尾分布纳入混合频率模型,采用上证综合指数2004-2011年滚动时间窗样本,利用SPA检验和MCS检验对低频、高频和混合频率三类波动模型预测精度进行比较。从风险价值的准确性和预测失败的损失程度角度对比三类模型的风险管理效果。通过对不同损失函数和不同时间窗口的分析发现,在10个波动预测模型中,扩展后的混合频率Realized GARCH_t在预测日波动时具有较高的预测精度,能准确计算短期风险价值,而在预测周或者月波动时,半参数NSM模型预测精度更高,风险价值更准确。},
+  keywords = {低频波动模型;;高频波动模型;;混合频率波动模型;;SPA;;MCS},
+}
+
+@PhdThesis{疏祝鋆2014,
+  author   = {疏祝鋆},
+  title    = {高频资产协方差矩阵的预测及其在投资组合中的应用},
+  school   = {西南财经大学},
+  year     = {2014},
+  abstract = {金融资产协方差矩阵的估计和预测在金融众多领域如资产配置、风险管理等中具有核心地位。大量的实证研究表明,金融资产的价格波动率具有较强的记忆性。对资产协方差矩阵准确估计和预测,有利于制定合理的投资决策。近年来,关于高频协方差矩阵的估计和预测模型的研究已经成为金融计量学的一个重要方向。
+
+Andersen和Bollerslev (2003)提出的已实现协方差阵,已实现协方差矩阵是利用高频日内数据进行直接估计,具有无模型,无参数估计,克服了当资产个数很多时传统的多元GARCH的“维数灾难”,同时高频数据比低频数据包含了更多的市场信息。因此,已实现协方差矩阵成为目前高频数据中应用最广泛的一种协方差矩阵估计方法。
+
+然而,对于高频资产协方差矩阵的预测一直是高频研究领域的一个难点,尤其当资产维数很大时,现实的金融资产组合中通常涉及到多达数百个资产,对于这样一个高维度的高频资产协方差矩阵的预测显得很困难。首先,当资产个数增加时,需要估计的参数个数迅速增加。资产个数为k时,需要估计的参数个数为k(k+1)/2个。其次,我们要保证协方差矩阵的正定性。最后,大量的实证研究表明,资产的协方差矩阵具有较强的记忆性。因此,在预测模型必须要捕捉到长记忆性。
+
+在此背景下,本文研究的是中国股票市场上高频协方差矩阵的预测模型。股市是一个国家经济走势的晴雨表,股市在国家经济中起着重要的作用,通过股市,企业可以筹集资金来发展,中国的股市发展历程远远没有西方国家历史久远,中国的股市正处在一个不断完善和成熟的过程中,目前还看中国股市的波动性很大。近年来,已有很多学者对中国股票市场波动性进行了深入的研究。但是,国内学者对基于高频数据的协方差矩阵研究起步较晚,国内的研究大多针对一维的高频资产波动率进行研究,高频资产协方差矩阵的预测建模是金融计量学领域的热点也是一个难点,相比国外的研究来说,目前国内学者对于高频资产协方差矩阵的预测研究还处于相对空白阶段。目前来看,针对高频的协方差矩阵的预测的有效模型并不多见,主要还是克服不了当资产个数增加时参数估计带来的“维数灾难”、以及保持正定性这两个难点。然而高频资产协方差阵的预测在投资组合和风险管理中起着非常重要的作用。
+
+本文将Hautsch预测高频协方差矩阵的研究思路应用到中国的金融市场上,研究其在中国的股票市场上高频已实现协方差矩阵的预测模型,实证研究了上证180只股票中的52只股票的协方差矩阵预测。实证得出了在中国金融市场上,动态谱分解模型能够对高频协方差矩阵准确预测,不仅能克服“维数灾难”,保持正定性,还能刻画协方差矩阵的记忆性。并且在投资组合应用中,采用高频协方差矩阵构建的投资组合表现比同期的上证指数表现优秀。而且不同的高频协方差矩阵表现不一样,采用针对市场结构噪声和跳跃改进的协方差矩阵的投资组合累计收益率比已实现协方差矩阵的要高。
+
+对于投资组合的构建,国内的学者大多数还是采用传统的低频数据的来估计协方差阵,传统的多元GARCH由于其“维数灾难”,虽然提出时间很长,但是在实际工作中没有得到真正的应用。而基于高频数据的协方差矩阵的估计能过轻松解决“维数灾难”。目前国内学者很少有针对高频数据的协方差阵的估计和预测进行研究,在投资组合中的应用研究也不多见,相对于低频数据,高频数据协方差矩阵包含了更丰富的市场信息,因此在金融投资组合、风险管理等领域比低频数据更有优势。
+
+采用高频数据来估计协方差矩阵主要会受到两个方面影响,一个是市场结构噪声,另一个是日内价格的跳跃。市场结构噪声随着抽样频率的增加而增加,一方面采样频率增加包含了更多的信息,另一方面,采样频率增加又反过来会增加市场噪声。因此,在消除市场结构噪声方面会有两种途径,一种是通过降低采样频率,另一种途径就是通过平滑噪声,后一种途径没有损失数据,因而更为有效。
+
+现实中的金融环境中,有些资产日内价格会发生大幅度的跳跃,简称为价格跳跃,价格跳跃和市场结构噪声都会破坏价格连续假定。此时的已实现协方差矩阵不再是积分一致的估计量。故本文除了采用最基本的高频已实现协方差矩阵外还选取了一种既能够减少市场结构噪声也能够剔除跳跃的估计协方差矩阵的方法——门限预平均已实现协方差矩阵。比较了两种不同估计方法的在动态谱分解模型下的预测效果,并将两种高频协方差矩阵应用到构建动态的投资组合中,比较了两种不同方法估计出的协方差矩阵的投资组合效益。实证得出了基于市场结构噪声和跳跃改进的门限预平均协方差矩阵估计方法的预测效果要优于没有改进的已实现协方差矩阵的预测效果。同时得出了基于高频协方差矩阵的投资组合累计收益要高于同期的上证180指数的累计收益,并且针对市场结构噪声和跳跃改进后的已实现门限预平均协方差矩阵所构建的投资组合的效益要好于没有改进的已实现协方差矩阵所构建的投资组合效益。说明了动态谱分解预测模型的有效性以及基于市场结构噪声和跳跃改进的门限预平均协方差矩阵能构建更有效的投资组合。
+
+通过本文的理论分析与实证研究,得到了以下的结论：(1)在中国股市上,动态谱分解模型能够有效降低参数估计的数量,保证矩阵的正定,同时还能捕捉到波动的长记忆性,是高频协方差矩阵预测有效预测模型。而且针对改进的门限预平均已实现协方差矩阵的预测效果要优于已实现协方差矩阵的预测效果。(2)实证得出了在构建最小方差的投资策略的动态投资组合中,采用动态谱分解模型预测的高频协方差矩阵不论是预测已实现协方差矩阵还是已实现门限预平均协方差矩阵,其构建动态投资组合的累计收益率在一个很长的时间段内远比同期上证180指数的累计收益率要高。说明了高频协方差矩阵的估计和预测的有效性,并且基于市场结构噪声和跳跃改进的已实现门限预平均协方差的表现比没有对噪声和跳跃处理过的已实现协方差表现要好。
+
+本文的创新点：
+
+(1)首次在国内利用高频数据对52只金融股票的日内价格收益率的协方差矩阵进行了预测,采用了针对市场结构噪声和跳跃改进的已实现门限预平均协方差矩阵和没有改进的已实现协方差矩阵两种估计方法,比较了两种不同估计方法的、方差矩阵的预测效果,并将高频协方差矩阵的估计和预测结果应用投资组合中,构建动态的投资组合模型。
+
+(2)预测方法上,首次在国内引入了一种全新的高频协方差矩阵的预测方法——动态谱分解预测模型。该模型最初由国外学者Hautsch提出,由于该模型避免其他模型在预测时遭遇的“维数灾难”问题以及能很好地保持正定性难题,故本文将其预测方法应用在了中国股票市场上,实证得出了在中国股票市场上,动态谱分解模型也能够起到很好的预测作用,其中采用门限预平均已实现协方差矩阵的预测效果要优于已实现协方差矩阵的预测效果。
+
+高频资产协方差矩阵的预测建模是金融计量学领域的热点也是一个难点,相比国外的研究来说,目前国内学者对于高频资产协方差矩阵的预测研究还处于相对空白阶段。本文动态的谱分解模型应用到中国股市上,实证研究了52只股票的协方差矩阵的估计和预测,通过构建动态的投资组合,比较了两种不同方法估计出的协方差矩阵的投资组合效益。同时将构建的投资组合的累计收益率与现实的市场指数比较,证明了该模型确实能够捕捉到市场动态,并且能够战胜市场。同时由于其克服了“维数灾难”,在实际应用中具有很大价值。
+
+本文进一步的研究方向为：(1)可以扩展动态谱分解预测模型的应用领域,如可以应用到债券市场、汇率市场,期权市场等；(2)本文采用两种不同的高频协方差矩阵估计方法,还可以采取更多不同的高频协方差矩阵的估计方法,以比较市场结构噪声和跳跃给估计带来的影响。},
+  keywords = {高频资产协方差矩阵预测;;动态谱分解;;已实现门限预平均协方差矩阵},
+}
+
+@PhdThesis{许志香2014,
+  author   = {许志香},
+  title    = {基于高频数据已实现GARCH-HAR模型的研究},
+  school   = {厦门大学},
+  year     = {2014},
+  abstract = {鉴于波动率的不可观测性,一直以来波动率的估计都是金融市场的重要课题,不管是在金融产品定价、资产配置,亦或是风险管理方面,波动率估计都扮演着举足轻重的角色。随着计算机等相关技术的发展,金融高频数据越来越荣易获得,传统的GARCH族模型已不能满足高频数据的研究需要,而以通过加总高频收益率得到的已实现波动率为代表的波动率代理变量,为市场的波动提供了一个可靠的度量,因此如何将这二者的优势进行整合从而更好地预测市场波动具有重要的现实意义。
+
+本文选取上证综合指数的5分钟高频收益序列,计算出已实现波动率,并在现有文献的基础上将其分解成连续和跳跃成分以及已实现半方差的形式,然后通过GARCH模型和HAR模型对收益率序列、已实现波动率序列进行联合建模,得到一个具有混频性质的Re-GARCH-HAR模型。实证结果表明,该模型的预测效果比传统的GARCH模型要好,同时在对波动率进行中长期预测时,模型的表现也优于Realized GARCH模型,在探究该模型的具体形式时,我们发现：仅仅利用负的收益率计算出已实现半方差,并将其加入GARCH模型所构建的Re-GARCH-HAR-RS模型的预测具有最好的预测效果。},
+  keywords = {高频数据;;已实现波动;;已实现半方差},
+}
+
+@PhdThesis{何建2013,
+  author   = {何建},
+  title    = {金融市场已实现波动率预测研究},
+  school   = {浙江工商大学},
+  year     = {2013},
+  abstract = {波动率是金融风险管理、衍生品定价、以及投资组合构建等领域的关键变量,对波动率的准确预测一直是现代金融学研究的热点问题。如何准确预测波动率,对投资者管理资产风险及监管者控制市场风险、保证市场稳定均具有重大的理论和现实意义。大量国内外研究文献表明,基于高频数据的已实现波动率理论模型在测度和预测市场波动率领域相较于传统波动率模型(如GARCH族模型)具有显著的优势。
+
+本文基于Andrew和Vitaliy (2011)的时变概率密度函数理论提出一个己实现波动率的非参数预测模型——TVF模型,并与Corsi(2004)提出的HAR-RV模型进行比较分析。再者,为综合吸收非参数的TVF模型和线性的HAR-RV模型的各自特征,本文考虑组合预测方法,首创性地构造了一种自适应时变组合权重,并以此构建自适应组合预测模型,以期获得比经典的算术平均组合预测模型更高的预测精度。本文以沪深300股指期货的5分钟高频价格数据作为实证研究样本,计算出样本内已实现波动率值,并以HAR-RV模型、TVF模型、算术平均组合预测模型和自适应组合预测模型对其建模,预测样本外已实现波动率,同时引入基于低频数据的GARCH模型和FIGARCH模型作为对比。为综合评价各波动率模型的预测能力,本文采用滚动时间窗口策略来进行样本外预测,并基于损失函数法、SPA检验法和Mincer-Zarnowitz回归法构造模型预测能力的评价体系,从而使评价结论稳健可靠。
+
+实证结果表明：HAR-RV模型、TVF模型、算术平均组合预测模型和自适应组合预测模型这四种已实现波动率模型对市场真实波动率的预测能力要显著高于GARCH模型和FIGARCH模型；非参数的TVF模型的预测能力显著高于HAR-RV模型；以HAR-RV模型和TVF模型作为单一模型构造两种组合预测模型,其中,算术平均组合预测模型的预测能力只显著高于HAR-RV模型,但相较于TVF模型其预测能力并没有明显的提高,而自适应组合预测模型的预测能力要显著高于任一单一模型。},
+  keywords = {已实现波动率;;时变概率密度函数;;自适应时变权重;;组合预测},
+}
+
+@Article{唐勇2013,
+  author   = {唐勇 and 刘微},
+  title    = {加权已实现极差四次幂变差分析及其应用},
+  journal  = {系统工程理论与实践},
+  year     = {2013},
+  volume   = {33},
+  number   = {11},
+  pages    = {2766--2775},
+  abstract = {针对金融高频数而开发的极差波动估计量因能更精确地度量波动率而备受关注.根据方差有效性结合数值模拟,推导出了已实现极差多幂次变差族中最优的波动估计量,并依据无偏性和方差有效性给出了相应的加权估计量.同时将这些估计量与已实现GRACH模型相结合,并对模型进行扩展.实证表明已实现极差四幂次变差是已实现极差多幂次变差族中最优的波动估计量,加权的已实现极差四幂次变差能有效消除日历效应的影响,扩展的已实现GRACH模型在拟合和预测效果上明显优于传统的EGARCH模型.},
+  keywords = {已实现极差多幂次变差;;日历效应;;已实现GARCH;;预期不足},
+}
+
+@PhdThesis{朱子豪2013,
+  author   = {朱子豪},
+  title    = {基于结构突变检测的沪深300指数已实现波动率研究},
+  school   = {南京大学},
+  year     = {2013},
+  abstract = {本文介绍的已实现波动率理论,通过将日内高频收益率的平方加总而求得当日的已实现波动率,其作为日真实波动率的一致估计量而使得原本不能直接观测到的隐含波动率变得可以观测得到,并在此基础上本文还根据渐近理论引入新的用以代替已实现二次幂变差的估计量来使得连续波动和跳跃波动的分离工作更为有效。在将波动率当中的连续样本路径方差和离散跳跃方差有效地分离开后,文章选用异质自回归类(HAR)模型来对波动率建模预测。考虑到中国股票市场因其不成熟极易收到外界因素的影响而出现剧烈的波动,文章还引入经过修正后的迭代累积平方和算法(ICSS)来计算股票市场波动序列当中的结构突变点,并在根据这些结构突变划分出的子样本区间内分别考察模型的模拟预测能力。
+
+在对实证结果进行分析后发现,已实现波动率在其标准形式下也呈现出右偏且尖峰厚尾的分布,而其对数形式则已经非常接近标准正态分布,符合经典理论当中对波动率的设定,此外波动率的序列子相关性也非常明显,有较强的波动聚集性。在分离波动率当中的跳跃和非跳跃成份后发现两个序列均存在自相关性,但跳跃成份的自相关性要弱于非跳跃成份。对已实现波动率的HAR类模型建模回归的结果显示,同时将跳跃和非跳跃成份作为解释变量的模型提前一天的预测能力最佳,在经计算分离出的四个样本子区间中的实证结果也显示如此,但是模型当中跳跃的预测能力并不显著,故文章又仅选用非跳跃部分再次对波动率进行考察,发现波动率序列当中存在着规模效应和杠杆效应。},
+  keywords = {已实现波动率;;跳跃;;结构突变;;HAR模型},
+}
+
+@PhdThesis{龚旭2013,
+  author   = {龚旭},
+  title    = {HAR类已实现波动率模型及其在中国股票市场中的应用研究},
+  school   = {长沙理工大学},
+  year     = {2013},
+  abstract = {股票市场的波动率以及相关特征的研究，是国内外金融学者和业界金融从业者研究金融风险度量、金融资产定价、金融衍生品定价等金融实务问题的基础。定量分析这些实务问题，其前提是对资产波动率进行准确的度量和预测。因此，资产波动率的度量和预测一直是金融学者关注和研究的热点。近年来，随着通讯技术及计算机的使用和普及，在很大程度上降低了金融交易数据的记录和存储成本，从而使得金融高频交易数据日益成为研究金融资产波动率的重要手段。Anderson和Bollerslev（1998）运用日内高频数据计算的已实现波动率，相比传统的资产波动率度量模型，对股票市场波动率的度量精度更高。因此，本文从已实现波动率的角度，通过构建新的已实现波动率模型来研究中国股票市场的波动率。
+
+
+本文首先介绍已实现波动率的基本理论，以及分析中国股票市场已实现波动率的特征。然后，考虑隔夜收益方差，对现有的HAR-RV和HAR-CJ模型进行改进，构建新的HAR-ARV和HAR-CJ模型；并在新的HAR-CJ模型的基础上，加入投资者的行为偏差因素（动量效应），构建了HAR-CJ-M模型。接着，以中国股票市场沪深300指数的5分钟高频数据为研究样本，对HAR-ARV模型、HAR-CJ模型和HAR-CJ-M模型进行参数估计，再使用这三个模型的其他两种常用的表达形式、选择不同的样本长度和选择不同的参考价格（HAR-CJ-M模型的研究）对三个模型的参数估计结果进行稳健性检验。最后，运用损失函数法比较这三个模型对中国股票市场未来调整已实现波动率的预测能力。
+
+
+研究结果表明：中国股票市场已实现波动率存在明显的尖峰厚尾性、右偏性、跳跃性和长记忆性特征；HAR-RV模型、HAR-CJ模型和HAR-CJ-M模型的构建具有较强的理论支撑，且它们适用于中国股票市场的已实现波动率的研究。其中，HAR-ARV模型的估计结果证实了中国股票投资者异质性的存在，与Müller等（1993）提出的“异质市场假说”理论相吻合。HAR-CJ模型和HAR-CJ-M模型的估计结果可以看出中国股票市场中历史的连续样本路径方差成分对未来波动率有一定的预测作用，而历史的离散跳跃方差成分的预测能力很弱，同时从HAR-CJ-M模型的估计结果中，发现不同期限（日、周和月）的动量效应因素（资本利得突出量）的系数大多都显著，说明中国股票市场中各类投资者的这一非理性行为对未来的波动率有一定的预测作用。另外，本文的研究还表明：HAR-RV模型、HAR-CJ模型和HAR-CJ-M模型对中国股票市场波动率有不错的预测能力，而加入动量效应因素的HAR-CJ-M模型预测中国股票市场波动率的能力明显强于其它两个模型，它更有利于金融风险度量、金融资产定价和金融衍生品定价等中国金融实务问题的研究。},
+  keywords = {已实现波动率;;HAR类模型;;异质市场假说;;动量效应;;资本利得突出量},
+}
+
+@Article{黄雯2013,
+  author   = {黄雯 and 黄卓 and 王天一},
+  title    = {高频农产品期货波动率和相关性预测——基于Realized Copula-DCC模型的视角},
+  journal  = {浙江社会科学},
+  year     = {2013},
+  number   = {05},
+  pages    = {40--47+156},
+  abstract = {本文构建了Realized Copula-DCC模型,整合Realized GARCH模型和Copula-DCC模型对农产品期货的波动率和动态相关性进行研究。农产品期货不仅表现出波动聚类现象、偏斜和尖峰厚尾的特征,还呈现出非正态性。基于Skewed-t分布的Realized GARCH模型比其他模型更好地刻画了农产品期货的波动率特征。农产品期货的相关性呈现出动态变化,tCopula-DCC模型比其他时变Copula模型更好地反映了农产品期货相关性的动态演化过程。},
+  keywords = {Realized;;Copula-DCC;;Realized GARCH;;Copula;;波动率;;动态相关性},
+}
+
+@PhdThesis{陈召蕾2012,
+  author   = {陈召蕾},
+  title    = {基于异质市场假说的中国股市已实现波动率研究},
+  school   = {东北财经大学},
+  year     = {2012},
+  abstract = {随着全球经济一体化的发展与中国股票市场运作机制的日趋完善,我国股票市场已成为全球金融市场中一个重要组成部分,在金融市场研究中,波动率是一直为热点课题,学者们对波动率领域的大量研究得出了求解波动率的三种主流方法：一是由Black-Scholes方程求解到的隐含波动率；二是以(?)RCH类和SV类模型为代表的历史波动率；三是基于高频数据研究的已实现波动率,也就是本文的研究对象。随着高频数据可以越来越方便的获得,以前的模型波动率方法已不再适合高频数据研究需要。相比于模型波动率,已实现波动率能够更直接、准确地描述股市波动率的特征。金融研究文献表明,以往的GARCH类和SV类模型的日收益低频数据会损失很多对投资者波动预期很有用的信息,而日内高频数据的可得性则弥补了这一缺陷,高频率的采样数据包含了尽可能全面的信息。另外,已实现波动率方法是一种非参数方法,没有模型波动率方法带来的参数估计问题,更没有因为复杂参数估计带来的“维数灾难”,是近年来比较新颖的波动率研究方法。
+
+对已实现波动率的研究理论中,Muller(1993)等人的异质市场假说的理论,Peters(1994)的分形市场假说理论,Lux and Marchesi(1999)的混合市场理论,市场交易的异质性特征在这三种理论中都有所体现,与同质市场相反,异质市场假说认为,市场波动率与市场活跃程度成正比,即参与者越多,交易行为的多样化会导致波动的正向变化。本文选择基于异质市场假说,在考虑了市场微观结构噪声和跳跃基础上,采用HAR-RV以及相关模型(HAR-RV-GARCH, HAR-RV-J,HAR-RV-CJ)对我国股票市场中的已实现波动率进行了有效的估计,分析研究了短期,中期,长期交易类型对股市已实现波动率的影响。
+
+本文选取从2005年4月8日至2010年4月22日上证综指共计59816个5分钟高频收盘价数据,计算得到1227个已实现波动率数据,2005年1月4日至2011年8月23日深证综指共计77424个5分钟高频收盘价数据,计算获得1613个已实现波动率作为研究数据,基于二次幂变差理论,将波动率中的跳跃成分进行有效的分离,通过HAR-RV-J(?)HAR-RV-CJ模型对短中长期已实现波动率进行了有效的估计,本论文实证表明,对于日已实现波动率,短期投资类型对其影响最大,而中长期交易类型的边际贡献率偏低,但两者相差不大,而三个解释变量系数均显著,表明我国股票市场异质性特征的存在,同时也验证了异质市场假说中的理论,即短期已实现波动率受自身前期值的影响,同时也受中长期交易的影响,而对于长期交易者而言,主要受其自身前期值的影响。这与于小蕾在《基于HAR模型对中国股票市场已实现波动率研究》中的结论类似。
+
+而后对HAR-RV模型进行最小二乘回归后的残差进行分析,发现残差序列具有群聚现象,因此我们检验了误差项的ARCH效应,并添加了GARCH项,通过HAR-RV-GARCH模型进一步研究了三种交易类型对已实现波动率的影响,消除了残差项的ARCH效应,HAR-RV-GARCH模型实证表明,添加GARCH项后的模型与原来的HAR-RV模型几乎没有什么差异。在研究跳跃影响方面,根据二次幂变差理论,将已实现波动率分解为连续样本路径方差和离散跳跃方差两部分,考虑到市场微观结构噪声对已实现波动率的影响,用错列的收益率绝对值乘积(原始的二次幂变差公式是相邻收益率绝对值的乘积)修正了二次幂变差的计算方式,以减小市场微观结构的影响,这样通过修正的Z统计量重新得到考虑市场微观结构噪声影响后的跳跃方差的序列,在显著水平为0.01条件下,由修正的Z统计量检验得到的显著性到达的跳跃共308次,比之前的276次多了32次,捕捉率也由修正前的22.49%增强为25.1%,因此,修正的Z统计量检验的跳跃变差序列更为精确一些,我们根据Huang和Tanchen(2005)的研究内容,先是对HAR-RV-J模型实证,结果表明,跳跃项对已实现波动率具有显著的负影响,通过HAR-RV-J和HAR-RV-CJ模型对波动率的估计结果,对比HAR-RV模型,我们可以知道,考虑跳跃项的HAR-RV-J和HAR-RV-CJ模型有更好的拟合效果和预测性能。
+
+本文创新点即充分考虑市场微观结构噪声的条件下量化了跳跃成分对不同已实现波动率的影响,采用修正的Z统计量有效的检测出显著性跳跃次数,对波动率的捕捉程度有明显的提高,从而更有效的分析影响已实现波动率的各个因子。},
+  keywords = {异质市场假说;;HAR-RV;;市场微观结构;;跳跃;;已实现波动率},
+}
+
+@Article{Hansen2012,
+  author   = {Hansen, Peter Reinhard and Huang, Zhuo and Shek, Howard Howan},
+  title    = {Realized GARCH: a joint model for returns and realized measures of volatility},
+  journal  = {Journal of Applied Econometrics},
+  year     = {2012},
+  volume   = {27},
+  number   = {6},
+  abstract = {SUMMARY(#br)We introduce a new framework, Realized GARCH, for the joint modeling of returns and realized measures of volatility. A key feature is a measurement equation that relates the realized measure to the conditional variance of returns. The measurement equation facilitates a simple modeling of the dependence between returns and future volatility. Realized GARCH models with a linear or log‐linear specification have many attractive features. They are parsimonious, simple to estimate, and imply an ARMA structure for the conditional variance and the realized measure. An empirical application with Dow Jones Industrial Average stocks and an exchange traded index fund shows that a simple Realized GARCH structure leads to substantial improvements in the empirical fit over standard GARCH models that only use daily returns. Copyright © 2011 John Wiley & Sons, Ltd.},
+}
+
+@Article{黄雯2012,
+  author   = {黄雯 and 王天一 and 黄卓},
+  title    = {利用高频数据管理沪深300指数的尾部风险——基于Realized GARCH模型的VaR},
+  journal  = {中大管理研究},
+  year     = {2012},
+  volume   = {7},
+  number   = {02},
+  pages    = {66--86},
+  abstract = {本文使用高频数据研究了沪深300指数的尾部风险。基于Skewed-t分布的Realized GARCH模型比基于t分布和正态分布的Realized GARCH模型拟合要好。这说明对于具有聚类波动,尖峰厚尾和偏斜特征的金融数据来说,同时考虑了偏斜和厚尾特征的Skewed-t分布的Realized GARCH模型是一个合适的模型。本文使用两种方法对在险值VaR进行预测,一种是基于样本外的多步预测,另一种是基于滚动窗口的一步预测。两种方法下,Realized GARCH模型基本上都要比GARCH和EGARCH模型预测表现要好,并且,厚尾分布比正态分布能更好地描述风险,尤其是尾部风险。基于Skewed-t分布的Realized GARCH模型,在各个置信水平下,都表现很好且稳定,这说明同时考虑了偏斜和厚尾特征的Skewed-t分布的Realized GARCH模型能很好地预测风险值。},
+  keywords = {尖峰厚尾;;偏度;;VaR;;高频数据},
+}
+
+@PhdThesis{睢琰2012,
+  author   = {睢琰},
+  title    = {我国沪深300指数已实现波动率的估计和预测},
+  school   = {西南财经大学},
+  year     = {2012},
+  abstract = {波动率是研究资本市场的重要指标,准确的计量并预测资本市场上金融资产的波动率不仅有助于了解金融市场的运行特征,也有利于投资者准确的预测投资风险并控制市场的系统风险,从而做出正确的投资决策。因此对其进行建模并加以精确的度量及预测有着至关重要的意义。
+
+最早期的波动率是选择日收益率来进行度量的,但是随着科技的高速发展,各种金融产品的交易变得越来频繁,其中的日内交易数据所包含的信息量以及所受结构误差的影响变得越来越大。更为重要的是若使用日收益率来对波动率进行度量,并以此为基础而建立的估计和预测模型,一般都是低维的甚至是单变量的。
+
+在这种情况下,已实现波动率这种新的波动率度量方法被提了出来。Merton指出,在一定的时间间隔内,若抽样频率为无穷大,则日内收益率的平方和可以任意精确地逼近实际波动率。它是基于高频数据对波动率进行建模和预测,同时不需要复杂的参数估计,而且可以解决多变量情况下的维数灾难。已实现波动率较于其他波动率的度量模型有两个优点：一是已实现波动率是基于高频数据进行计算；二是其适合金融经济的高维多元变量环境中的波动率建模和预测。
+
+随着已实现波动率的不断推广,国外研究者基于国外成熟资本市场对已实现波动率进行了大量的研究,目前几乎可以得出一个统一的结论：已实现波动率不服从正态分布假说,呈现出典型的高峰、厚尾并且极度右偏的特征,对数已实现波动率的自相关系数呈双曲线速率下降,具有长记忆性特征。
+
+为了解释已实现波动率所表现出来的一些非线性特征,一些相应的理论应运而生,其中之一便是民质市场假说。异质市场假说认为已实现波动率之所以会出现这些非线性特征是由于市场上存在异质交易者所引起的。由于不同的参与者在不同时间产生的不同预期而形成了分形的市场结构,从而出现了短期、中期和长期交易者,导致了不同类型的市场波动产生。
+
+在异质性假说的基础上,HAR-RV模型被提了出来。该模型的建立就是对不同时间间隔所计算的已实现波动率建立一个一阶自回归模型。虽然HAR-RV模型并不复杂,但是它能很好的刻画已实现波动率的一些非线性特征,如尖峰厚尾以及长记忆性等。
+
+目前来说,已实现波动率的研究也被广泛的应用到了我国资本市场的实际研究中。但是,使用HAR-RV模型对已实现波动率进行研究的学者还不是很多。因此本文引入HAR-RV模型对我国沪深300指数的已实现波动率进行描述和预测,以证实该模型是否适合于我国的市场。
+
+本文的主线结构如下：
+
+由于HAR-RV模型本身就是建立在已实现波动率的基础上,因此在本文中首先基于沪深300指数的高频收益率数据计算得到我国的已实现波动率数据,这个在文章外由EXCEL来完成。同时由于基于高频数据计算的已实现波动率具有微观结构误差以及测量误差,并随着抽样频率的变化,两种误差呈现出此消彼长的现象,因此抽样频率的确定对已实现波动率的准确度量有很重要的意义。本文选择了5个不同的抽样频率进行比较,经过实证比较,发现15分钟的高频数据的总体误差值最小
+
+HAR-RV模型是基于异质性假说的基础上建立的,而异质性假说所解释的现象就是市场中的已实现波动率具有尖峰、肥尾、极度右偏以及长记忆性等非线性特征。因此本文在使用HAR-RV模型对我国的沪深300指数的已实现波动率进行度量时,首先需要对其进行统计性描述,以确定我国的市场上是否同国外的一些成熟市场一样,也具有这些非线性特征。经过实证分析,发现我国也具有这种非线性特征,因此初步的认为可以使用HAR-RV模型对我国沪深300指数进行估计及预测。
+
+在使用HAR-RV模型对我国沪深300指数进行估计和预测时,为了使其实证结果更具有说服力,所以本文引入了一种发展相对成熟完善的模型,即GARCH族模型,通过两个模型的相互对比,来阐述HAR-RV模型是否能够相对准确的对我国沪深300指数的已实现波动率进行拟合和预测。
+
+本文具体章节安排：
+
+第一章：绪论。该部分介纠了本文的研究背景以及选题意义,并阐述了在本文中将用到的一些预备知识理论。阐述了国内外学者在波动率研究领域的成果,并指出了本文的研究思路及结构安排；
+
+第二章：通过对不同波动率度量方法的比较,说明已实现波动率的优势；
+
+第三章：基于沪深300指数的已实现波动率实证描述。首先阐述本文数据来源,并确定使噪声误差最小的抽样频率,在此基础上得出我国已实现波动率统计性特征描述结论,以初步确定本文所选取的实证模型是否合理；
+
+第四章：HAR-RV模型和GARCH族模型的计量原理。从计量的角度上对二者的拟合原理进行了分析,并对二者进行了理论上的比较；
+
+第五章：基于HAR-RV模型对已实现波动率的实证研究。使用HAR-RV模型对我国沪深300指数的已实现波动率进行了回归估计,并作出预测,最后基于HAR-RV模型的实证结果对我国的实际情况做了简单的分析；
+
+第六章：基于GARCH族模型对沪深300指数已实现波动率的实证研究。使用GARCH族模型对样本数据进行了估计和预测,GARCH族模型在具体的实证过程中,采用了由简入难的模型逐个进行估计及预测,并做了内部的一个简单比较；
+
+第七章：结论。就已经得到的实证结果来对HAR-RV模型和GARCH族模型进行对比分析,并以此来说明HAR-RV模型对我国股市的刻画效果。在结尾阐述了研究的不足,以及有待于进一步研究的问题。},
+  keywords = {高频数据;;已实现波动率;;长期记忆性;;HAR-RV模型;;GARCH族模型},
+}
+
+@Article{Wei2012,
+  author   = {Wei, Yu},
+  title    = {Forecasting volatility of fuel oil futures in China: GARCH-type, SV or realized volatility models?},
+  journal  = {Physica A: Statistical Mechanics and its Applications},
+  year     = {2012},
+  volume   = {391},
+  number   = {22},
+  abstract = {Abstract(#br)In most previous works on forecasting oil market volatility, squared daily returns were taken as the proxy of unobserved actual volatility. However, as demonstrated by Andersen and Bollerslev (1998) [22], this proxy with too high measurement noise could be perfectly outperformed by a so-called realized volatility (RV) measure calculated by the cumulative sum of squared intraday returns. With this motivation, we further extend earlier works by employing intraday high-frequency data to compare the performance of three typical volatility models in the daily out-of-sample volatility forecasting of fuel oil futures on the Shanghai Futures Exchange (SHFE): the GARCH-type, stochastic volatility (SV) and realized volatility models. By taking RV as the proxy of actual daily volatility and then computing forecasting errors, we find that the realized volatility model based on intraday high-frequency data produces significantly more accurate volatility forecasts than the GARCH-type and SV models based on daily returns. Furthermore, the SV model outperforms many linear and nonlinear GARCH-type models that capture long-memory volatility and/or the asymmetric leverage effect in volatility. These results also prove that abundant volatility information is available in intraday high-frequency data, and can be used to construct more accurate oil volatility forecasting models.},
+  keywords = {Oil futures;;Volatility forecasting;;Realized volatility},
+}
+
+@Article{王天一2012,
+  author   = {王天一 and 黄卓},
+  title    = {高频数据波动率建模——基于厚尾分布的Realized GARCH模型},
+  journal  = {数量经济技术经济研究},
+  year     = {2012},
+  volume   = {29},
+  number   = {05},
+  pages    = {149--161},
+  abstract = {"厚尾现象"是金融时间序列分布的一个普遍特征,本文将RealizedGARCH模型推广到容纳厚尾分布的情形,并将杠杆函数的幂次放松为待估参数。结果显示,使用Skewed-t分布的模型能够较好地反映收益率序列的厚尾和偏峰性质,放松的幂次参数可以给出更贴合数据的"信息冲击曲线"。引入厚尾分布亦可用改进Realized GARCH模型对实现测度的预测,其中使用标准t分布的模型给出的预测精度最高。},
+  keywords = {Realized GARCH;;厚尾分布;;高频数据;;信息冲击曲线},
+}
+
+@PhdThesis{刘晓群2012,
+  author   = {刘晓群},
+  title    = {基于异质市场假说的中国股票市场已实现波动率特征研究},
+  school   = {长沙理工大学},
+  year     = {2012},
+  abstract = {股市的波动及相关特征是国内外学者研究金融衍生工具的定价、有效资产组合的选择及金融风险管理的关键变量，也是金融学领域的一个研究热点。近年来，随着计算机及通讯技术的快速发展，极大的降低了数据记录和存储的成本，从而使得金融高频数据日益成为研究金融资产价格波动及市场微观结构的重要手段。Anderson和Bollerslev（1998）首次提出基于高频数据计算的“已实现”波动率，相比金融资产的日收益率，它能够更为精确的度量股票市场的波动。Cors（i2004）基于Müller等（1993）的异质市场假说理论提出了基于已实现波动率的异质自回归模型（Heterogeneous Auto-regressive model of Realized Volatility, HAR-RV模型)，它不属于真实长记忆类模型，而是一种简单的已实现波动率的可加时间序列模型，分别用不同时间段的已实现波动率来刻画特定类型市场参与者的交易对整个波动率的边际贡献，因而不仅具有明确的经济含义，也能用更简单的普通最小二乘OLS估计方法来刻画出已实现波动率的长记忆性等动态特征。
+杠杆效应与量价关系是股票市场波动的两个主要特征，综合国内外对已实现波动率的研究现状，发现还没有文献在异质市场假说理论的基础上对已实现波动率的研究中同时考虑杠杆效应与量价关系。因此，本文旨在全面刻画股市波动特征和提高股市波动预测能力的同时，在HAR-RV模型的基础上，综合考虑波动的非对称性及量价关系，构建了LHAR-RV-V模型，并将其在中国股市进行实证分析，以进一步揭示中国股市波动的相关特征。实证结果表明该模型能够较好地捕捉我国股票市场波动的长记忆性和杠杆效应，且杠杆效应具有一定的持续性，从而进一步验证了Müller等（1993）提出的异质市场假说。此外，过去不同周期交易量的加入不仅能够更为细微的反映量价之间的关系，而且在一定程度上改善了模型的预测能力。},
+  keywords = {异质市场假说;;LHAR-RV-V模型;;交易量;;杠杆效应},
+}
+
+@PhdThesis{贾俊艳2012,
+  author   = {贾俊艳},
+  title    = {基于加权已实现极差的中国股市波动特征研究},
+  school   = {长沙理工大学},
+  year     = {2012},
+  abstract = {随着计算机及通信技术的发展，当获取金融高频数据成为可能后，如何运用高频数据进行建模并估计波动率成为当今研究的热点问题之一。已实现极差波动是针对高频时间序列而提出的一种全新的波动率度量方法，而加权已实现极差可以有效的去除波动的“日内效应”，是比已实现极差更有效的波动估计量。
+一般而言，不同的股票市场表现出不同的波动特征，波动率估计量的优劣性在于能否精确地刻画出股票市场波动的典型特征及变化趋势。大量研究表明，中国股票市场的波动呈现出尖峰厚尾，自相关性和非对称等特征，并且容易受交易量、价差等市场微观因子的影响，基于中国股市高频数据构造出的加权已实现极差是否也能够刻画出上述的波动特征，目前还没有相关文献对此进行研究。
+本文首先基于沪深300股指的五分钟高频数据构造已实现波动、已实现极差和加权已实现极差序列，通过理论和实证比较分析，已实现极差序列的方差是已实现波动序列方差的五分之一，加权已实现极差可以有效的去处“日内效应”，且具有更稳定的序列特征，证明了基于中国股市高频数据加权已实现极差为更有效的波动率估计量。
+随后，为了全面考察加权已实现极差波动的特征和预测未来波动，本文对加权已实现极差进行建模，通过分析其序列性质，本文运用自回归模型（AR模型）对其对数序列进行建模，并在该模型的基础上分别添加非对称变量及交易量因素，研究加权已实现极差序列的非对称特征以及交易量对其的影响。实证结果表明：中国股票市场上加权已实现极差序列具有尖峰厚尾、集聚性、持续性等特征，在模型中加入非对称及交易量因素后，模型的预测能力增强，表明加权已实现极差具有非对称性特征，并且与交易量存在较强的正相关关系。},
+  keywords = {已实现极差;;加权已实现极;;非对称性;;交易量},
+}
+
+@PhdThesis{李洋2012,
+  author   = {李洋},
+  title    = {沪深300股指期货市场已实现波动率实证研究},
+  school   = {西南财经大学},
+  year     = {2012},
+  abstract = {对于现代金融理论的完善与实际的应用中,资产收益率波动起着至关重要的作用,是进行资产定价、风险管理的核心。因而,对于波动率动态性地建模与预测等一系列工作变得日益重要。同时,随着计算机技术的发展,各种金融产品交易频率有了显著提高,日内高频数据的获得变得越来越容易,因此,如何利用这些日内数据来估计金融资产的波动率,是当先众多研究者和实务者关注的问题。
+
+对波动率的研究可以追溯到二十多年前,大部分的实证研究文献都是基于日数据来建模的,比如GARCH模型或者随机波动率(SV)模型。近些年来,日内高频数据的获得变得很容易,如何在波动率模型中加入日内高频数据的信息成为了一个重要的研究方向。尽管GARCH非常流行,但并不能很好的反应日内高频数据的波动率。Andersen和Bollerslev(1998)提出如何在连续价格模型假设和二次变差理论基础下,处理日内高频数据的波动率问题。他们提出了一种基于日内收益率平方和来计算的日内已实现波动率。因其显式的可观测性,我们可以用标准的时间序列技术来对其建模和预测。Barndorff-Nielsen和Shephard(2004)的研究表明：为了得到更好的估计效果,可以将二次变差分解为连续部分和跳跃部分。Andersen(2011)对这个问题作了进一步研究,对构成总波动的两部分(连续波动率和跳跃波动率)使用独立时间序列预测模型来建模和预测。他将一天中的总波动分解为基于双幂波动率(bi-power variation)计算的连续波动率和跳跃波动率两个部分,并用HAR-RV (Heterogeneous Autoregressive model of Realized Volatility)模型来研究连续波动率的动态结构,取得了较好的效果；同时对跳跃波动率进行了分解,对跳跃波动率建立了更为精确的模型。在本文中,我们采用Andersen的研究方法,将沪深300股指期货市场的已实现波动率分解为连续波动率和跳跃波动率,并对这两部分分别建模,研究两者各自的动态结构。
+
+第一章首先阐释了文章的选题背景和选题意义,其次介绍了已实现波动率的相关背景知识,接着简述了已实现波动率研究的现状,最后在此基础上提出了本文的研究方法。
+
+第二章对沪深300股指期货市场做了相应的介绍：首先分别介绍了沪深300股指期货的产生于发展过程、股指期货的功能与作用、股指期货与股票的区别和股指期货的市参与者类型；然后介绍了沪深300股指期货合约的合约条款；接着介绍了股指期货市场的风险控制制度；最后是对沪深300股指期货市场的发展方向与前景的展望。
+
+第三章研究已实现波动率的估计。首先介绍了已实现波动率波及的初期离散模型和连续模型,并在此基础上介绍了市场微观结构噪音对已实现波动率的影响以及处理方法。之后采用前人的处理方法,选取了计算已实现波动率的最优频率。最后研究了已实现波动率的分解问题,将已实现波动率分解为连续波动率和跳跃波动率,并进一步将跳跃波动率分解为跳跃是否发生序列和跳跃大小序列。
+
+第四章对沪深300股指期货市场已实现波动率做了实证分析。首先,我们介绍了本文选取数据是市场上能获得的最高频率数据,这是与其他实证文章的重要区别之一。接着,用第三章的方法,得到每日最优取样频率,并用这个频率计算了已实现波动率、连续波动率和跳跃波动率以及隔夜收益率。同时研究了这些变量的描述性统计特征与自相关性检验,发现已实现波动率、连续波动率和跳跃波动率均存在右偏、尖峰和强自相关现象,这说明他们是非正态的且存在较长记忆性。然后,我们研究了沪深300股指期货市场波动率均值结构突变问题,研究发现,股指期货已实现波动率以及连续波动率以及跳跃波动在股指期货推出至今一年多的时间内,均值结构发生了显著变化。连续波动率与已实现波动率均值发生两次显著变化。第一次在2011年1月27日,另一次在2011年8月3日。第一次突变时,已实现波动率均值和连续波动率均值变为原平均值的50%左右。第二次突变时,已实现波动率和连续波动率的均值均有所上升,达到2011年1月27日之前水平的70%。同时,跳跃波动率只在连续波动率和已实现波动率第一次突变时发生突变,在第二次时未发生显著变化。这表明,已实现波动率第一次突变是由跳跃波动和连续波动率共同影响的结果；而第二次突变,则完全由连续波动率变化来完成。
+
+本文第五章研究了连续波动率的动态结构。首先分别介绍了HAR模型,以及HAR模型的改进与发展,在此基础上提出了本文的HAR-M模型,考察了连续波动率的日效应、周效应和月效应,同时还考虑了日规模效应、周规模效应和月规模效应。研究结果表明连续波动率的日效应、周效应和月效应都是显著的,在很大程度上解释了下一个交易日的连续波动率。这说明沪深300股指期货市场存在短、中、长三种记忆性,且在这三种记忆性中,中期记忆最强。同时,研究还显示,日规模效应和周规模效应是显著的。这表明日和周收益率的绝对大小会对投资者的行为产生影响,从而对未来收益率的大小产生显著影响。但收益率的正负对于未来收益率的波动没有显著影响,这表明沪深300股指期货市场的投资者不关心收益率的正负,而关心收益率的绝对大小。
+
+本文第六章研究了跳跃波动率和隔夜收益率。首先,我们对跳跃发生的等待时间序列建立了ACH模型,研究了跳跃发生的条件危险率。实证结果表明滞后阶的期望等待时间对下次跳跃发生期望等待时间的影响是显著的,由此我们可以用该模型来预测下一个交易日发生跳跃的可能性。接着,我们为跳跃大小建立了HAR-J模型,研究了连续波动率对跳跃大小的影响。同时,我们还考虑收益率的日规模效应、周规模效应和月规模效应以及杠杆效应。实证结果显示连续波动率对跳跃波动率的周效应和月效应是显著的,这表明连续波动率对跳跃波动率具有预测作用。如果滞后阶的连续波动率越大,那么未来跳跃发生时的跳跃波动率也越大。此外,周规模效应也很显著,同时日规模效应也是显著的,上一个交易日的收益率为负且绝对值较大的时候,在下一次发生跳跃时,价格跳跃幅度较大。在本章的最后,我们研究了隔夜收益率的动态结构,建立了GARCH(1,1)-t模型。模型结果显示,隔夜收益率表现出一定波动聚集现象。
+
+本文第七章研究了前文几个模型的预测效果。我们对比了样本内与外的预测误差,研究发现模型样本内外预测效果相差无几,特别是连续波动率模型和跳跃大小模型,样本内外的预测误差MAPE均不到5%。这说明我们的模型预测效果较好。在对跳跃等待时间间隔模型做预测时,预测效果相比连续波动率模型而言,相对较差。
+
+本文最后一章对整个文章做了总结。第一,总结了本章所采用的主要模型以及主要结论。第二,分析了本文的优点与创新之处、不足之处以及进一步研究的方向。},
+  keywords = {已实现波动率;;连续波动率;;跳跃波动率;;HAR模型;;ACH模型;;结构突变;;沪深300股指期货},
+}
+
+@Article{WATANABE2012,
+  author   = {WATANABE, T. O. S. H. I. A. K. I.},
+  title    = {QUANTILE FORECASTS OF FINANCIAL RETURNS USING REALIZED GARCH MODELS *},
+  journal  = {Japanese Economic Review},
+  year     = {2012},
+  volume   = {63},
+  number   = {1},
+  abstract = {This article applies the realized generalized autoregressive conditional heteroskedasticity (GARCH) model, which incorporates the GARCH model with realized volatility, to quantile forecasts of financial returns, such as Value‐at‐Risk and expected shortfall. Student's t ‐ and skewed Student's t ‐distributions as well as normal distribution are used for the return distribution. The main results for the S&P 500 stock index are: (i) the realized GARCH model with the skewed Student's t ‐distribution performs better than that with the normal and Student's t ‐distributions and the exponential GARCH model using the daily returns only; and (ii) using the realized kernel to take account of microstructure noise does not improve the performance.},
+  keywords = {C52;;C53;;G17},
+}
+
+@PhdThesis{王会雨2011,
+  author   = {王会雨},
+  title    = {基于高频波动的VaR模型比较研究},
+  school   = {西南财经大学},
+  year     = {2011},
+  abstract = {本文利用高频数据,在高频波动理论基础上,建立了有代表性的已实现波动、调整已实现波动、已实现极差波动、已实现双幂次变差波动和二尺度已实现波动五个高频波动估计量,然后针对这五个估计量建立了分整自回归移动平均模型,并进行了样本内预测。假定收益率序列服从正态分布、学生T分布和广义误差分布,选取90%、95%、97%和99%的置信水平,应用高频波动样本内的预测值分别计算了在不同分布下、不同置信水平下的风险价值,最后对五个高频波动的风险价值模型进行了检验,选取出了不同置信水平下的最优风险价值模型。文章还建立了基于低频数据的GARCH模型,并计算了该模型下的风险价值,然后与基于高频波动的风险价值模型进行了比较分析。
+
+全文共分六章,第一章,是引言部分,就本文的选题背景、选题目的和意义、国内外研究现状和发展趋势、本文的主要研究内容和方法进行了简单的阐述。
+
+第二章是文献综述部分,就高频波动的国外、国内相关文献,风险价值国外、国内相关文献分别进行了梳理和分析,提出本文的研究思路和研究重点。
+
+第三章是关于风险价值的原理和应用,根据定义,风险价值在计算中涉及到两个关键因素,金融资产收益率的分布和波动率,对资产收益率的研究已经比较多了,本文重点关注波动率这个因素。
+
+第四章是高频波动时间序列建模,首先简要介绍了高频波动的理论基础,建立了已实现波动、调整已实现波动、已实现极差波动、已实现双幂次变差波动和二尺度已实现波动五个高频波动估计量,然后对这五个估计量进行了描述性统计分析,最后针对这五个高频波动估计量建立了分整自回归移动平均模型。
+
+第五章模型效果检验和结果分析,首先介绍了风险价值常用的检验方法失败率检验法,接着对基于五个高频波动估计量的风险价值模型进行了比较分析,然后计算了基于低频数据GARCH模型的风险价值,并进行了模型检验,本章最后就高频波动估计的风险价值模型和低频GARCH的风险价值模型进行了比较分析,选取出了在不同置信水平和不同分布下的最优模型。
+
+第六章是本文主要结论和后续讨论。
+
+本文的主要研究结论可以概括如下：
+
+第一、在10%的显著性水平下,基于广义误差分布下的已实现双幂次变差波动模型效果最好。在5%的显著性水平下,从检验统计量的角度来说,基于学生T分布的已实现极差波动和基于广义误差分布下的已实现双幂次变差波动模型效果最好。但是从实际失败天数与期望失败天数的绝对值之差来看,基于学生T分布的调整已实现波动效果最好。在3%的显著性水平下,从检验统计量的角度来说,基于学生T分布的已实现极差波动效果最好,从期望失败天数与实际失败天数的绝对值之差来看,基于学生T分布的已实现波动和基于广义误差分布的已实现极差波动效果最好。在1%的显著性水平下,基于学生T分布的已实现极差波动效果最好。
+
+第二、从最后选取出的模型来看,在不同的显著性水平下,有已实现波动、调整已实现波动、已实现极差波动和已实现双幂次变差波动,这充分说明,基于高频波动模型建立的风险价值要比基于低频数据建立的GARCH模型要好。
+
+第三、总体上来说,广义误差分布和学生T分布适用于置信度较高的检验,而正态分布适用置信度较低的检验。},
+  keywords = {高频波动;;已实现波动率;;分整自回归移动平均},
+}
+
+@PhdThesis{池云果2011,
+  author   = {池云果},
+  title    = {基于已实现波动的金融市场长记忆性分析},
+  school   = {福州大学},
+  year     = {2011},
+  abstract = {随着金融自由化和全球化的不断深入，金融市场面临着更多的不确定因素而导致金融波动的不断加剧。而波动则在资产定价，投资组合管理，风险管理和期权估价等方面都起到了至关重要的作用，金融危机的不断发生更是使人们加大了对由于资产价格波动所带来的风险的关注。但是，大量波动研究文献中长记忆性行为的发现，对经典的弱式有效市场假说(Efficient Markte Hypothesis, EMH)提出了质疑，这就使得建立在EMH基础上的定价理论的有效性大打折扣，而分形市场假说(Fractal Market Hypothesis, FMH)和异质市场假说(HeterogeneousMarket Hypothesis, HMH)则应运而生提出了相应的观点以解释长记忆性行为所表现出来的特性——历史的波动对未来波动具有持续的影响。而本文则对我国股市的波动进行了具体的长记忆性的检验和建模，以探讨我国股市的收益率波动是否存在长记忆性行为，或者说历史波动对未来波动是否具有预测能力，是否能提高波动预测的准确性。
+
+本文在基于高频数据计算得到的已实现波动率(Realized Volatility, RV)对波动度量的基础上，分析了波动的长记忆性特性。首先，回顾了EMH, FMH和HMH三种理论各自的观点，并归纳了长记忆性的内涵、几种长记忆性的检验方法和模型；其次，对分别基于FMH和HMH基础上的利用FIGARCH模型、ARFIMA-RV模型以及HAR-RV模型的大量的国内外研究进行了总结综述；再次，基于以上所介绍的检验方法和模型，对4个RV序列的长记忆性特性进行实证分析；最后，一方面探讨长记忆性下的风险估计，即根据学者们的研究，结合HAR-RV模型和一个GARCH、FIGARCH过程在t分布下对VaR进行估计及预测，并将其与传统的基于GARCH、FIGARCH模型下的VaR表现进行比较分析，实证表明不论是样本内还是样本外HAR-GARCH模型和HAR-FIGARCH模型下的VaR表现都更为准确；另一方面基于学者们对RV分解的研究，即将RV分解为连续部分和非连续的跳跃部分，并提出RV中跳跃对资产定价、期权以及其他衍生品定价的重要性，于是本文接着分析了跳跃的长记忆性行为，并结合HAR-RV-J、HAR-RV-CJ模型研究跳跃对未来波动的影响或预测能力，并得出结论认为包含跳跃的模型很好地改进了对波动的估计和预测，实证表明HAR-RV-J模型的波动估计和预测的表现是最优的。},
+  keywords = {已实现波动率;;长记忆性;;HAR-RV模型;;HAR-FIGARCH模型;;跳跃},
+}
+
+@Article{Shephard2010,
+  author   = {Shephard, Professor Neil and Sheppard, Kevin},
+  title    = {Realising the future: forecasting with high‐frequency‐based volatility (HEAVY) models},
+  journal  = {Journal of Applied Econometrics},
+  year     = {2010},
+  volume   = {25},
+  number   = {2},
+  abstract = {Abstract(#br)This paper studies in some detail a class of high‐frequency‐based volatility (HEAVY) models. These models are direct models of daily asset return volatility based on realised measures constructed from high‐frequency data. Our analysis identifies that the models have momentum and mean reversion effects, and that they adjust quickly to structural breaks in the level of the volatility process. We study how to estimate the models and how they perform through the credit crunch, comparing their fit to more traditional GARCH models. We analyse a model‐based bootstrap which allows us to estimate the entire predictive distribution of returns. We also provide an analysis of missing data in the context of these models. Copyright © 2010 John Wiley & Sons, Ltd.},
+}
+
+@Article{韩清2009,
+  author   = {韩清 and 刘永刚},
+  title    = {已实现波动率估计中不同降噪方法的比较分析及实证},
+  journal  = {数量经济技术经济研究},
+  year     = {2009},
+  volume   = {26},
+  number   = {08},
+  pages    = {148--161},
+  abstract = {已实现方差作为波动率的估计,在理论上是二次变差的无偏和一致估计。但在现实中,它受到市场微观结构噪声的影响而偏离其理论值。本文考虑如何降低市场微观结构噪声干扰而有效地估计波动率,主要讨论已实现核估计和双频子抽样已实现方差估计这两种纠偏降噪技术。我们进行了比较分析,并以来自中国股票市场的高频交易数据对各种已实现波动率估计进行了全面深入的实证研究,验证了各种统计量的性质。实证结果表明,目前常用的利用时间间隔数据的已实现波动率估计低估了风险,因此纠偏降噪技术对于风险管理具有非常重要的现实意义。},
+  keywords = {已实现波动率;;高频金融数据;;微观结构噪声;;纠偏降噪方法},
+}
+
+@PhdThesis{于晓蕾2009,
+  author   = {于晓蕾},
+  title    = {基于HAR模型对中国股票市场已实现波动率的研究},
+  school   = {吉林大学},
+  year     = {2009},
+  abstract = {
+
+
+对金融市场有价证券波动率的测量和建模是金融产品定价、资产配置及风险管理的关键所在。随着高频数据可以越来越方便的获得,过去的ARCH模型及GARCH模型已经不能再满足高频数据的研究需要。在目前的实证应用中,可以通过将高频收益率的平方加总来对日或者更低频率的波动进行测量,这就是我们所说的已实现波动率,它可以通过更为精确的模型进行估计,并且可以通过已实现波动率来对波动率的动态系统及分布结构进行描述。借用已实现波动率的计算方法,我们获得了系统风险beta的非参数估计方法,我们称之为已实现beta。已实现beta可以直接用来模拟我们所观测到的beta的时变性。本文选取了上证综指及深证成指的5分钟高频收益率序列,计算出了5分钟的已实现波动率,对其进行描述性统计分析发现其具有同国外已实现波动率较相近的尖峰、厚尾、极度右偏及长记忆性特点。本文选取了HAR-RV模型对已实现波动率进行建模,并基于回归结果将HAR-RV模型扩展为HAR-RV-GARCH模型,取得了非常好的预测效果,并且通过回归分析,证明了我国股票市场交易者异质性的存在。本文选取浦发银行(600000)一只股票为代表,计算了该只股票的已实现beta值,并且通过AR(3)模型进行预测,取得了较为精确的预测效果。},
+  keywords = {高频数据;;已实现波动率;;HAR-RV模型;;已实现beta},
+}
+
+@PhdThesis{林翟2009,
+  author   = {林翟},
+  title    = {基于已实现波动率的两种模型的预测能力的实证研究},
+  school   = {厦门大学},
+  year     = {2009},
+  abstract = {
+
+
+波动率是金融资产最重要的特征之一,对其准确度量有着极其重要的意义。由于国外资本市场比较发达,这方面的研究已比较成熟,但国内由于种种限制,这方面的研究相对比较落后,但随着我国资本市场对外开放进程的加快,对波动率的研究已经迫在眉睫,这对构建我国金融机构的风险管理系统和准确度量资产价格有着极其重要的意义。
+
+
+
+本文首先对“积分波动率”和“已实现波动率”进行了介绍并给出了国外文献中关于“已实现波动率”和“已实现极差波动率”的定义,并对其特性进行了介绍。然后应用积分波动率的方差最小来选定高频数据的最优抽样频率。
+
+
+
+本文的模型和实证部分介绍了两类模型:SV模型和GARCH模型,进而根据高频数据的特征构建长记忆随机波动率模型(LMSV模型)和(经过季节性调整的)GARCH模型。参考Deo等人2006年的文献,本文基于中国上证指数的高频数据,首先对收益率序列进行了季节性调整,此后应用扩展的频域伪极大似然估计对LMSV模型进行了参数估计,最后进行波动率预测。本文在GARCH模型的均值方程中对季节性进行了调整,然后应用极大似然估计法对模型参数进行估计,最后进行波动率预测。预测能力的评价指标采用预测的波动率对(无模型的)已实现极差波动率进行回归,因为已实现极差波动率是积分波动率的一致估计量,所以将其作为真实波动率的代理。比较回归系数和拟合优度即可对模型预测能力进行判断。
+
+
+
+本文实证结果表明,无论预测长度为多久,LMSV的预测精度都较高;两模型对中期的预测效果都比较好;从拟合优度角度看,短期LMSV的预测效果好于GARCH模型,中长期GARCH模型要好于LMSV模型。},
+  keywords = {波动率;;高频数据;;LMSV模型},
+}
+
+@Article{Barndorff-Nielsen2009,
+  author   = {Barndorff-Nielsen, O. E. and Hansen, P. Reinhard and Lunde, A. and Shephard, N.},
+  title    = {Realized kernels in practice: trades and quotes},
+  journal  = {The Econometrics Journal},
+  year     = {2009},
+  volume   = {12},
+  number   = {3},
+  abstract = {Realized kernels use high-frequency data to estimate daily volatility of individual stock prices. They can be applied to either trade or quote data. Here we provide the details of how we suggest implementing them in practice. We compare the estimates based on trade and quote data for the same stock and find a remarkable level of agreement. We identify some features of the high-frequency data, which are challenging for realized kernels. They are when there are local trends in the data, over periods of around 10 minutes, where the prices and quotes are driven up or down. These can be associated with high volumes. One explanation for this is that they are due to non-trivial liquidity effects.},
+}
+
+@PhdThesis{史宇峰2008,
+  author   = {史宇峰},
+  title    = {金融资产收益相关性及持续性研究},
+  school   = {天津大学},
+  year     = {2008},
+  abstract = {
+
+
+金融资产收益相关性及持续性研究是金融工程研究领域的中心,准确度量资产收益之间的相关性及持续性是探索资本市场运行机理和实务操作的关键。为此,将统计物理学和多元统计学中的有关理论及金融计量模型与金融领域的现实问题相结合取得了如下成果:
+
+
+
+1.以统计物理学中的随机相关矩阵特征值概率密度为理论依据,构建了收益相关矩阵选取方法,从而解决了收益相关矩阵优选问题。实证检验显示,按由该方法所选取的收益相关矩阵配置资产可得到优质的有效前沿。
+
+
+
+2.以多元统计学中的Wishart概率密度为理论依据,推导出相关系数的修正模型,该模型剔除了样本容量效应,使相关性度量更为准确可靠。实证结果显示,该模型具有较高的资产配置效率。
+
+
+
+3.基于协同持续思想通过GARCH模型技术构建了动态投资组合模型,该模型可捕捉到金融资产收益的局部波动,达到控制风险扩散的目的。实证显示,按该模型配置资产可控制组合收益率在较小范围内波动,也可得较高夏普比。
+
+
+
+4.提出风险溢出发生期及风险溢出强度两个概念,并构建了相应数学模型。同时,基于该模型进行了实证研究,结果显示,沪市影响深市的程度较深市影响沪市的程度大,且它们之间的风险溢出在大约3分钟之内完成,这一研究结果与实际吻合。
+
+
+
+5.将统计物理学中的公因子提取法运用于资本资产定价方面,提出了CAPM修正模型。实证结果显示该模型较原模型具有较高的定价能力。
+
+
+
+上述理论成果依次在论文五个主体章节中展开讨论,这些研究成果均遵循从理论依据到方法构建、模型提出,再到实证检验的研究思路,从而确保了研究工作的科学性和实用性。},
+  keywords = {投资组合;;风险溢出;;资产定价;;收益相关矩阵;;相关系数;;协同持续;;已实现波动},
+}
+
+@Article{邵锡栋2008,
+  author   = {邵锡栋 and 殷炼乾},
+  title    = {基于实现极差和实现波动率的中国金融市场风险测度研究},
+  journal  = {金融研究},
+  year     = {2008},
+  number   = {06},
+  pages    = {109--121},
+  abstract = {目前比较流行的金融市场风险价值研究一般采用日收益数据,并基于GARCH类模型进行估计和预测。本文利用沪深股指日内高频数据,分别通过ARFIMA模型和CARR模型对实现波动率和较新的实现极差建模,计算风险价值。通过对VaR的似然比和动态分位数等回测检验,实证分析了各种模型的VaR预测能力。结果显示,使用日内高频数据的实现波动率和实现极差模型的预测能力强于采用日数据的各种GARCH类模型。},
+  keywords = {VaR;;实现极差;;实现波动率},
+}
+
+@Article{马玉林2007,
+  author   = {马玉林 and 王希泉},
+  title    = {基于实际波动率的VaR模型实证研究},
+  journal  = {山东大学学报(理学版)},
+  year     = {2007},
+  number   = {10},
+  pages    = {84--89},
+  abstract = {以实际波动率预测方法替代传统的波动率预测方法,应用到VaR模型中去,并随机选择了五只股票数据进行实证研究,比较基于GARCH模型和实际波动率模型的两种VaR预测结果,得到基于实际波动率的VaR预测效果显著地优于基于GARCH模型的VaR预测效果.},
+  keywords = {风险价值;;实际波动率;;GARCH模型},
+}
+
+@Article{熊正德2007,
+  author   = {熊正德 and 张洁},
+  title    = {“已实现”波动率理论研究与评价},
+  journal  = {湖南大学学报(社会科学版)},
+  year     = {2007},
+  number   = {04},
+  pages    = {62--65},
+  abstract = {"已实现"波动率是一种全新的金融波动率测量方法。"已实现"波动率在理论上没有测量误差的无偏估计量,在实证建模方面比其他模型更易于估计参数,同时最优频率的选取对于"已实现"波动率的测量精确度是很重要的。},
+  keywords = {“已实现”波动率;;二次变动;;“已实现”协方差},
+}
+
+@Article{马玉林2007a,
+  author   = {马玉林 and 刘瑞花},
+  title    = {基于实际波动率的组合选择实证研究},
+  journal  = {经济数学},
+  year     = {2007},
+  number   = {02},
+  pages    = {162--171},
+  abstract = {本文对证券组合三因素的7种预测方法进行了实证研究和敏感性检验,得出结论:若以周作为组合持有期,则不论何种收益预测方法,基于实际波率的ARFIMA方法在组合持有期上均取得了正的超额收益;基于实际波动率的ARFIMA法在组合选择的各种方法中是最优的.},
+  keywords = {实际波动率;;组合选择;;ARFIMA},
+}
+
+@Article{Cheong2007,
+  author   = {Cheong, Chin Wen and Nor, Abu Hassan Shaari Mohd and Isa, Zaidi},
+  title    = {An empirical study of realized and long-memory GARCH standardized stock-return},
+  journal  = {Applied Financial Economics Letters},
+  year     = {2007},
+  volume   = {3},
+  number   = {2},
+  abstract = {In this article, we study the standardized returns by using the realized volatility and long-memory GARCH models. The various normality tests indicate that the realized-standardized returns follow a Gaussian distribution. On the other hand, the standardized returns by GARCH models are able to reduce but not eliminate the excess kurtosis condition compare to the realized-standardized returns.},
+}
+
+@PhdThesis{唐勇2007,
+  author   = {唐勇},
+  title    = {基于高频数据的金融市场分析},
+  school   = {天津大学},
+  year     = {2007},
+  abstract = {
+
+近年来,对金融高频数据研究已经成为了金融计量学的一个全新的研究领域和方向。本论文主要研究了金融市场高频数据的特性、建模以及应用问题。本文的主要工作和创新点如下:
+
+
+1)分别基于已实现波动和已实现极差波动与积分波动之间误差项的渐近分布,给出了一个高频数据抽样方法。
+
+
+2)基于RV-VAR类波动模型,从单位根的角度给出了关于条件方差的持续性、协同持续的定义,证明了波动非持续性、协方差平稳和波动方程特征根在单位圆内具有内在的一致性。同时,也证明了上述给出的协同持续定义与Bollerslev和Engle提出的协同持续概念具有内在的一致性。扩展线性协同持续定义到非线性情况,给出了非线性协同持续的定义,证明了了它们之间的内在关系。
+
+
+3)基于RV-VAR模型,应用Bollerslev和Engle提出的持续和协同持续概念,证明了RV-VAR模型存在线性协同持续的充要条件和寻找这种线性协同持续向量的方法,又基于小波神经网络理论建立非线性协同持续模型。通过实证分析,表明沪深两股市之间不存在线性协同持续关系,但存在非线性协同持续关系。
+
+
+4)在RV-ARMA模型基础上,从条件方差持续性的角度,讨论了条件方差的持续性对资产资本定价模型的影响。又进一步讨论了多资产组合条件下,RV-VAR模型持续性对组合投资的影响。对高阶矩进行建模,并给出了时变条件四阶矩的资产定价模型。给出了基于RV-ARMA模型和GARCH模型的实证分析,指出当模型具有单位根时条件方差对资产定价的影响是持续的,并对持续性进行了比较。
+
+
+5)分别从模拟试验和理论上,比较了已实现波动和已实现极差波动两种度量方法。给出了考虑“日历效应”的加权已实现极差波动,并说明了已实现极差波动只是加权已实现极差波动的特例。通过一系列实证分析,也说明了加权已实现极差波动是更有效的波动估计量。},
+  keywords = {已实现波动;;持续性;;协同持续;;资本资产定价模型;;已实现极差波动},
+}
+
+@PhdThesis{张洁2006,
+  author   = {张洁},
+  title    = {已实现波动率及其在VaR中的实证研究},
+  school   = {湖南大学},
+  year     = {2006},
+  abstract = {金融市场的风险是全球金融机构及监管当局关注的焦点。与之对应，市场波动率的准确测量是度量风险价值的核心问题。关于波动率的度量，从最初经典的从金融分析模型中求解波动率(如Black-Scholes)，到通过ARCH模型和SV模型，再到基于高频数据的已实现波动率，波动率的测量得到了迅猛发展。在本文中我们研究了基于已实现波动率的中国股市的VaR，同时还研究了基于GARCH模型的VaR，对两个结果进行比较研究。
+
+
+
+
+
+
+
+
+
+首先介绍了本文的选题背景、意义及国内外的研究动态。提出了本文的研究框架。接着介绍了计算VaR的原理和方法，已实现波动率的理论和算法，最优时间间隔的选取原理，以及时间序列ARFIMA模型的类型和参数估计方法。然后在前面两部分的基础上，从实际数据出发，首先求出最优时间间隔，然后分析了收益率和已实现波动率的分布特性以及已实现波动率的长期记忆性，在此基础上建立了ARFIMA模型。最后建立了条件已实现波动率，求出基于已实现波动率的VaR，同时求出基于GARCH模型的VaR，最后用LR检验量和失败率对两种不同方法计算出来的VaR进行检验和比较。
+
+
+
+
+
+
+
+
+
+研究结果表明，基于已实现波动率的VaR在学生T分布和广义误差分布(GED)下有较好的预测效果。与基于GARCH模型的VaR比较，有较好的预测效果。},
+  keywords = {已实现波动率;VaR;学生T分布;广义误差分布},
+}
+
+@Article{Carvalho2006,
+  author   = {Carvalho, Marcelo C. and Freire, Marco Aurélio S. and Medeiros, Marcelo Cunha and Souza, Leonardo R.},
+  title    = {Modeling and Forecasting the Volatility of Brazilian Asset Returns: a Realized Variance Approach},
+  journal  = {Revista Brasileira de Finanças},
+  year     = {2006},
+  volume   = {4},
+  number   = {1},
+  abstract = {The goal of this paper is twofold. First, using five of the most actively traded stocks in the Brazilian financial market, this paper shows that the normality assumption commonly used in the risk management area to describe the distributions of returns standardized by volatilities is not compatible with volatilities estimated by EWMA or GARCH models. In sharp contrast, when the information contained in high frequency data is used to construct the realized volatility measures, we attain the normality of the standardized returns, giving promise of improvements in Value-at-Risk statistics. We also describe the distributions of volatilities of the Brazilian stocks, showing that they are nearly lognormal. Second, we estimate a simple model of the log of realized volatilities that differs from the ones in other studies. The main difference is that we do not find evidence of long memory. The estimated model is compared with commonly used alternatives in out-of-sample forecasting experiment.},
+  keywords = {realized volatility;;high frequency data;;risk analysis;;volatility forecasting;;GARCH models},
+}
+
+@Article{于亦文2006,
+  author   = {于亦文},
+  title    = {实际波动率与GARCH模型的特征比较分析},
+  journal  = {管理工程学报},
+  year     = {2006},
+  number   = {02},
+  pages    = {65--69},
+  abstract = {金融资产价格的波动率的测度具有重要意义,实际波动率(Realized Volatility)概念是近些年提出的用于测度市场波动率的新概念,在诸多方面具有优势。本文利用上海证券市场的高频数据,比较了两种不同的波动率模型———RV模型和GARCH模型———的性能表现。本文首先介绍了连续时间状态下实际波动率的概念和模型,然后建立了GARCH(1,1)模型,使用日收益率对GARCH模型进行估计,得到条件方差方程,分别用日收益平方和日内累计收益平方和作为波动率指标对收益平方-波动方程进行回归,并以回归决定系数来衡量波动率拟合水平的优劣,结果发现采用高频数据的回归决定系数比原来提高了两倍,这个结果与已有的实证分析结果基本一致,最后,我们将实际波动率的计算结果与GARCH模型的结果经标准化后进行了对比,发现实证研究结果表明,实际波动率模型比传统的GARCH模型提供了更好的拟合。},
+  keywords = {实际波动率;;GARCH模型;;高频数据},
+}
+
+@Article{徐正国2006,
+  author   = {徐正国 and 张世英},
+  title    = {多维高频数据的“已实现”波动建模研究},
+  journal  = {系统工程学报},
+  year     = {2006},
+  number   = {01},
+  pages    = {6--11},
+  abstract = {金融市场高频数据的分析与建模是金融计量学一个全新的研究领域.把基于一维高频数据的“已实现”波动率扩展到多维高频数据情形,给出“已实现”协方差阵,并给出了协方差阵的极限性质,用以刻画多维金融变量的波动率和相关性.研究了基于上证综指和深圳成份指数高频数据的“已实现”协方差阵的特性,最后针对它的长记忆性建立了FIVAR模型,该模型刻画了上证综指和深圳成份指数各自的波动性和之间的相关性.研究发现,“已实现”波动和“已实现”协方差取对数后具有良好的正态分布特性,相同的长记忆性.针对“已实现”协方差阵建立的FIVAR模型为进一步研究波动的协同持续性提供了基础.},
+  keywords = {高频数据;;“已实现”波动率;;“已实现”协方差阵;;长记忆性},
+}
+
+@Article{余尚武2006,
+  author   = {余尚武 and 王铭祥},
+  title    = {结合真实波动性预测模型与准蒙地卡罗仿真法于风险值之研究},
+  journal  = {管理科学},
+  year     = {2006},
+  number   = {01},
+  pages    = {72--78},
+  abstract = {以台湾加权股价指数为研究对象,研究期间为2001年1月2日~2003年1月13日,共计500日之报酬率资料。采用不同真实波动性预测模型,研究不同抽样频率的报酬率数据与不同波动性预测模型的预测能力,并结合准蒙地卡罗仿真法进行VaR值之仿真,以进行VaR估算绩效之比较。研究发现,利用真实波动性观念的日内报酬率数据的确能带来较有用的信息,就波动性预测准确度而言,整体上以Intraday GARCH(1,1)模型最好;就VaR估算绩效而言,则以适应性类神经模糊推论系统模型相对较佳。},
+  keywords = {风险值;;真实波动性;;适应性类神经模糊推论系统},
+}
+
+@Article{施红俊2005,
+  author   = {施红俊 and 陈伟忠},
+  title    = {股票月收益实际波动率的实证研究},
+  journal  = {同济大学学报(自然科学版)},
+  year     = {2005},
+  number   = {02},
+  pages    = {264--268},
+  abstract = {阐述了实际波动率的理论背景,以及国外在实际波动率研究方面已得出的一些基本结论.对深沪股市随机抽   取的30只股票数据进行了实证检验,得出对数实际月波动率序列的分布与正态分布无差异、月收益率经月实际波   动率标准化后的序列的分布与正态分布无差异的结论.利用月实际波动率对广义自回归条件异方差类模型的波动   率模拟效果进行了检验,发现该模型的波动率度量精度略胜一筹,但也只能解释一小部分收益率的变动.},
+  keywords = {股票月收益;;实际方差;;实际波动率;;正态分布},
+}
+
+@Article{徐正国2004,
+  author   = {徐正国 and 张世英},
+  title    = {调整"已实现"波动率与GARCH及SV模型对波动的预测能力的比较研究},
+  journal  = {系统工程},
+  year     = {2004},
+  number   = {08},
+  pages    = {60--63},
+  abstract = {高频金融时间序列的分析与建模是金融计量学的一个全新的研究领域,"已实现"波动率是针对高频金融时间序列的一种全新的波动率的度量方法。为了降低"已实现"波动的测量误差,提出更有效的调整"已实现"波动。针对调整"已实现"波动的长记忆性和"杠杠"效应建立ARFIMAX模型。通过设定一系列标准,全面比较基于调整"已实现"波动的ARFIMAX模型、GARCH模型以及SV模型的预测能力。},
+  keywords = {高频金融时间序列;;调整"已实现"波动率;;二次变差;;长记忆性;;Mincer-Zarnowitz回归},
+}
+
+@Article{施红俊2003,
+  author   = {施红俊 and 马玉林 and 陈伟忠},
+  title    = {实际波动率理论及实证综述},
+  journal  = {山东科技大学学报(自然科学版)},
+  year     = {2003},
+  number   = {03},
+  pages    = {101--105},
+  abstract = {较为详细地阐述了国外对实际波动率研究的最新成果。首先阐述了实际波动率的理论背景,然后展示了国外研究已得出的一些基本结论,并进一步讨论了关于实际波动率的焦点问题,最后将RV和GARCH作了简要比较。理论及实证表明:实际波动率确实是一个深具理论基础且有重大实用价值的波动率度量。},
+  keywords = {实际波动率;;半鞅;;二次变动},
+}
+
+@Article{Forsberg2002,
+  author   = {Forsberg, Lars and Bollerslev, Tim},
+  title    = {Bridging the gap between the distribution of realized (ECU) volatility and ARCH modelling (of the Euro): the GARCH‐NIG model},
+  journal  = {Journal of Applied Econometrics},
+  year     = {2002},
+  volume   = {17},
+  number   = {5},
+  abstract = {Abstract(#br)This paper bridges the gap between traditional ARCH modelling and recent advances on realized volatilities. Based on a ten‐year sample of five‐minute returns for the ECU basket currencies versus the US dollar, we find that the realized volatilities constructed from the summation of the high‐frequency intraday squared returns conditional on the lagged squared daily returns are approximately Inverse Gaussian (IG) distributed, while the distribution of the daily returns standardized by their realized volatilities is approximately normal. Moreover, the implied daily GARCH model with Normal Inverse Gaussian (NIG) errors estimated for the ECU returns results in very accurate out‐of‐sample predictions for the three years of actual daily Euro/US dollar exchange rates. Copyright © 2002 John Wiley & Sons, Ltd.},
+}
+
+@Article{Fernandez1998,
+  author   = {Fernández, Carmen and Steel, Mark F. J.},
+  title    = {On Bayesian Modeling of Fat Tails and Skewness},
+  journal  = {Journal of the American Statistical Association},
+  year     = {1998},
+  volume   = {93},
+  number   = {441},
+  abstract = {Abstract(#br)We consider a Bayesian analysis of linear regression models that can account for skewed error distributions with fat tails. The latter two features are often observed characteristics of empirical datasets, and we formally incorporate them in the inferential process. A general procedure for introducing skewness into symmetric distributions is first proposed. Even though this allows for a great deal of flexibility in distributional shape, tail behavior is not affected. Applying this skewness procedure to a Student t distribution, we generate a “skewed Student” distribution, which displays both flexible tails and possible skewness, each entirely controlled by a separate scalar parameter. The linear regression model with a skewed Student error term is the main focus of the article. We first characterize existence of the posterior distribution and its moments, using standard improper priors and allowing for inference on skewness and tail parameters. For posterior inference with this model, we suggest a numerical procedure using Gibbs sampling. The latter proves very easy to implement and renders the analysis of quite challenging problems a practical possibility. Some examples illustrate the use of this model in empirical data analysis.},
+}
+
+@Article{Hansen2016a,
+  author  = {Hansen, Peter Reinhard and Janus, Pawel and Koopman, Siem Jan},
+  title   = {Realized Wishart-Garch: A Score-Driven Multi-Asset Volatility Model},
+  journal = {Tinbergen Institute Discussion Papers},
+  year    = {2016},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
