@@ -59,7 +59,8 @@ ECONOMETRICS,2010)
 使用每日收益的标准GARCH模型相比，简单的已实现GARCH结构可显著改善经验拟合。
 
 ## Realized wishart-garch
-1. Realized wishart-garch: A score-driven multi-asset volatility model [@Hansen2016a]
+### 提出该模型的文献
+Realized wishart-garch: A score-driven multi-asset volatility model [@Hansen2016a]
 
 链接：https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2821497
 
@@ -74,7 +75,7 @@ ECONOMETRICS,2010)
 
 高频数据；多元GARCH; 多元波动; 已实现的协方差；得分；Wishart密度。
 
-**数据：**对股票的投资组合进行研究，股票由15个道琼斯工业平均指数成分组成，股票代
+**数据：**对股票的投资组合进行研究，股票由15个**道琼斯工业平均指数**组成，股票代
 码为AA，AXP，BA，CAT，GE，HD，HON，IBM，JPM，KO，MCD，PFE，PG，WMT和XOM。 
 
 **结论：**我们为金融资产的协方差矩阵的每日时间序列建模和预测提出了一个新模型：
@@ -91,12 +92,43 @@ Wishart-GARCH模型与其他多元GARCH模型以及指数加权移动平均方�
 资组合。与标准多元GARCH相比，该模型能够以更有效的方式跟踪资产的波动性和依赖结构
 的突然变化。
 
-2. 得分驱动的已实现Wishart-GARCH模型及应用(华科，统计与决策，2019)[@周少甫2019]
+**补充：**
+
+1. Realized wishart-garch 可以看作是Realized GARCH模型在多变量情况下的扩展，但是
+   它是新颖的，因为我们对**时变条件方差矩阵采用了分数驱动方法**。
+2. 我们的主要目的是为每日时变方差矩阵指定一个模型，并通过使用低频和高频数据来提取该模型。
+3. 采用分数驱动框架 [@Creal2013Generalized]加权方差和协方差矩阵。
+4. 联合建模框架依赖于Wishart密度来实现已实现方差矩阵，并依赖于高斯密度来实现日收益向量。
+5. 时变方差矩阵的更新由预测联合似然函数的标定分数驱动。分数函数证明是日收益的外
+   部乘积与实际已实现度量的加权组合。加权取决于Wishart分布中的自由度数。我们将结
+   果模型称为Wishart-GARCH模型。
+6. 已实现度量是利用日内高频数据对方差矩阵进行更准确的度量
+7. 在计算已实现的度量时，通常会排除隔夜收益，而对日收益的建模则基于开盘价和收盘价。
+8. 对于单变量资产，wishart简化为伽马分布
+9. 研究了不同样本大小T和资产数量k的估计性能。
+10. 股票的投资组合有道琼斯15个**不同行业的公司**组成，在构造已实现的内核之前，我
+    们对原始交易数据执行清理程序。 对逐笔数据进行清理，清理程序参考
+    Barndorff-Nielsen 提供的清理程序 [@Barndorff-Nielsen2009]
+    - 删除9:30 am4:00pm窗口之外带有时间戳的条目
+    - 删除交易价格等于零的条目
+    - 保留单个交易所条目
+    - 删除交易更正条目
+    - 删除销售条件异常的条目
+    - 将中位数价格用于带有相同时间戳的多个交易
+    - 我们删除价格高于要价加买卖价差的条目。
+11. 在进行估计前，对于非同步交易，需要进行 Hayashi和Yoshida（2005) [@HayashiOn]
+    以及 Voev和Lunde（2007） [@LundeIntegrated]提出的刷新时间抽样。
+12. 选用BEKK,EWMA （指数加权移动平均）模型进行预测效果对比,使用两个损失函数来评
+    估Wishart-GARCH模型相对于BEKK和EWMA的性能。
+13. 与标准多元GARCH相比，该模型能够以更有效的方式跟踪资产的波动性和依赖结构的突然变化。
+
+### 该模型实证应用-银行业
+得分驱动的已实现Wishart-GARCH模型及应用(华科，统计与决策，2019)[@周少甫2019]
 
 **摘要**文章以银行业为例，基于股票逐笔交易数据，在得分驱动的已实现Wishart-GARCH
 模型的框架下， 对银行业规模靠前的多只个股对数收益率的已实现协方差矩阵尝试*多种降
-噪方法*来进行建模以及预测，并检验预测效果。结果显示：**该模型对于银行业个股间收
-益率的已实现协方差矩阵有着优于以往模型的良好预测效果。** 
+噪方法*来进行建模以及预测，并检验预测效果。结果显示：
+**该模型对于银行业个股间收益率的已实现协方差矩阵有着优于以往模型的良好预测效果。** 
 
 **要点：**
 
@@ -148,42 +180,64 @@ Barndorff-Nielsen 等(2009)提供的预处理方法中对交易数据源于同�
 对于预测同一行业内各只股票的波动率以及他们之间的关联性具有较强实用价值。（能源行
 业，保险行业等）
 
-3. 待补充
-
-4. An international comparison of implied, realized, and GARCH volatility
+## implied, realized, and GARCH 波动率预测的比较
+1. An international comparison of implied, realized, and GARCH volatility
    forecasts [@Kourtis2016]
 
-**题目：**隐含，已实现和GARCH波动率预测的国际比较
+**题目：**隐含，已实现和GARCH波动率预测的国际比较(2016)
+
+**摘要：**我们比较了来自10个国家的13个股票指数的隐含波动率、已实现波动率和GARCH
+波动率模型的预测能力和经济价值。不同国家的模型排名相似，但随着预测范围的变化而变
+化。在每日水平上，异质自回归模型提供了最准确的预测，而修正波动风险溢价的隐含波动
+模型在每月水平上更优越。在几乎所有考虑的情况下，广泛使用的GARCH模型的性能都较
+差。在2008-2009年危机期间，所有方法的表现都非常糟糕。最后，**隐含波动率相对于国
+际投资组合多样化的历史方法提供了显著的改进**。
+
+**数据：**从Bloomberg收集了13个国际股票指数的每日股息调整收盘水平。我们用这些来
+计算百分比指数回报率。其次，我们对每一个股票指数使用一个每日已实现的波动率序列，
+由等间距的5分钟日内收益率构成。从Bloomberg获得了与所考虑的股票市场相对应的期权隐
+含波动率指数的每日数据。使用的所有隐含波动率指数都是以无模型方式构建的。我们的样
+本涵盖了从2000年1月3日到2012年10月26日的时间段，尽管对于某些市场来说样本较短。
 
 
 
-5. Forecasting stock return volatility: a comparison of GARCH, Implied
+2. Forecasting stock return volatility: a comparison of GARCH, Implied
    volatility, and realized volatility models [@Kambouroudis2016]
 
-**题目：**预测股票收益波动率：GARCH，隐含波动率和已实现波动率模型的比较
+**题目：**预测股票收益波动率：GARCH，隐含波动率和已实现波动率模型的比较（2016）
 
 
 
 
 
-# 研究方向
+# 研究思路
 ## 已实现的Wishart-GARCH
 1. 模型实证意义：Realized Wishart-GARCH 2016年才提出来[@Hansen2016a]，可预测股市
    中某个行业的波动率与其他模型进行比较。
 2. 创新型：做的人不多，中文期刊只有2019年发表的针对银行业波动率的预测[@周少甫2019],可以选择另一个行业进行预测
 3. 数据可获得性：股市交易数据较易获取
-4. 目前没有找到包，还要仔细阅读文章，继续寻找
+4. R包已找到，关于RCC包（http://www.mamicode.com/info-detail-1468193.html ）
+   
+## 题目
+1. 得分驱动的已实现Wishart-GARCH模型及应用——多元资产波动率预测（定位与跨公司和跨行业）
+
+2. 基于Realized Wishart-GARCH对波动率预测研究——以原油市场为例（定位于某个行业）
 
 
+## 模型
+以realized Wishart-GARCH模型(得分驱动的多元资产波动模型)为主
+### 相关模型
+realized garch 模型、已实现的SV模型、多元的realized garch 模型，多元realized
+Wishart-GARCH模型比较,与BEKK,EWMA进行预测效果对比。
 
+## 数据
+### 数据来源
 
-## 
-
-
-
-
-
-
+### 数据处理
+1. 数据逐笔清理
+2. 刷新时间抽样
+3. 
+### 
 
 # 参考文献
 [//]: # (\bibliography{Bibfile})
